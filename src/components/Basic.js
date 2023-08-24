@@ -1,9 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { IoMdSend } from 'react-icons/io';
 import { BiBot, BiUser } from 'react-icons/bi';
-import logo1 from './graph2.png';
-import logo2 from './logo2.png';
-import logo3 from './logo3.png';
+
 import './chatBot.css'; // Import the CSS file
 
 
