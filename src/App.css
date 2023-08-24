@@ -1,0 +1,74 @@
+/* App.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* App container */
+.App {
+  text-align: center;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  justify-content: flex-start; /* Align the logos to the left */
+  align-items: flex-start; /* Align the logos to the top */
+  padding: 20px; /* Add padding to create space between logos and content */
+}
+
+/* Logo wrapper for the first logo */
+.logo-wrapper1 {
+  margin-left: 350px; /* Add margin from the top left corner for the first logo */
+}
+
+/* Logo wrapper for the second logo */
+.logo-wrapper2 {
+  margin-left: 520px; /* Add margin from the top left corner for the second logo */
+}
+
+/* Logo image */
+.App-logo {
+  height: calc(20px + 4vmin); /* Set the logo height to twice the title font size */
+  width: auto; /* Keep the aspect ratio of the image */
+  pointer-events: none;
+}
+
+
+
+
+
+/* App header */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* App link */
+.App-link {
+  color: #61dafb;
+}
+
+/* Keyframes for logo spin animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.bot-logo {
+  width: 30px; /* Adjust the width as needed */
+  height: 30px; /* Adjust the height as needed */
+  margin-right: 10px; /* Add margin as needed */
+}

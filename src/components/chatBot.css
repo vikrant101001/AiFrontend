@@ -1,0 +1,346 @@
+/* chatBot.css */
+
+body {
+  background-color: #f5f5f5; /* Light gray background for the entire page */
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  margin-top: 20px;
+
+  
+  
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  min-height: 80vh; /* Adjust the value as needed */
+}
+/* Ensure the card fills the height of the parent container */
+.card.chatbot-chat,
+.card.checkin-chat {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Set the card body to fill the available vertical space */
+.card.chatbot-chat .card-body,
+.card.checkin-chat .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Set the message area to fill the available vertical space and enable scrolling */
+.card.chatbot-chat .card-body .message-area.ai-assistant-chat,
+.card.checkin-chat .card-body .message-area {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+/* Ensure the footer stays at the bottom of the card */
+.card.chatbot-chat .card-footer,
+.card.checkin-chat .card-footer {
+  margin-top: auto;
+}
+
+
+
+
+.chatbot-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 48%;
+}
+
+.checkin-col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 48%;
+}
+.chatbot-col,
+.checkin-col {
+  min-height: 80vh; /* Adjust the value as needed */
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.card-header h1 {
+  font-size: 24px;
+  background-color: #fcf7f7;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card-header{
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.card-body {
+  padding: 10px;
+}
+.card-footer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.message-area {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.bot-message {
+  display: flex;
+  flex-direction: column; /* Display options as a list */
+  align-items: flex-start; /* Align content to the left */
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* Align the bot message text to the left */
+.bot-message p {
+  text-align: left;
+  margin: 2px 0; /* Add spacing between options */
+  white-space: pre-line; /* Add this line to preserve line breaks */
+}
+
+
+.user-message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  justify-content: flex-end; /* Align user messages to the right */
+}
+
+.bot-message {
+  background-color: rgb(205, 173, 241);
+  border-radius: 10px;
+}
+
+.user-message {
+  background-color: rgb(235, 220, 252);
+  border-radius: 10px;
+  justify-content: flex-end;
+}
+
+.message-icon {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.start-checkin-btn {
+  
+  margin-top: 10px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.start-checkin-btn:hover {
+  background-color: #0056b3;
+}
+
+input[type='text'] {
+  width: 500px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button[type='submit'] {
+  margin-left: 10px; /* Add spacing between input and submit button */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+button[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Scrollbar styles */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(140, 27, 185);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b909e6;
+}
+
+/* Additional styles for the right column (Check-in) */
+
+.checkin-chat {
+  margin-top: 00px;
+}
+
+.checkin-start-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.checkin-start-container h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #010000;
+}
+
+.checkin-start-container p {
+  font-size: 16px;
+}
+
+/* Add some space between the "Weekly Check-in" title and the "Start Check-in" button */
+.checkin-start-container button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkin-start-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Separate styles for AI Assistant and Check-in Chat */
+.ai-assistant-chat {
+  margin-bottom: 20px;
+}
+
+.user-msg-text {
+  text-align: right;
+}
+
+/* Left-align bot message options */
+.bot-message ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.bot-message li {
+  text-align: left;
+  margin-left: 20px;
+}
+.button-group {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: right; /* Align buttons vertically */
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 10px; /* Adjust the spacing between the buttons */
+}
+/* Apply blue background color to buttons */
+.button-group button {
+  
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Apply blue background color to buttons on hover */
+.button-group button:hover {
+  background-color: #0056b3;
+}
+/* Add space between the input field and the submit button */
+.input-field {
+  flex-grow: 1; /* Expand input to fill remaining space */
+  margin-bottom: 10px;
+}
+
+.bar-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.bar-label {
+  width: 120px;
+}
+
+.bar-fill {
+  background-color: blue; /* Change the color as needed */
+  height: 100%;
+}
+
+.bar-graph-container {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.full-width-header {
+  width: 100%;
+}
+.message-input {
+  display: flex;
+  align-items: center;
+}
+
+/* Add this CSS to your stylesheets */
+.larger-donut {
+  width: 300px; /* Adjust this value as needed */
+  height: 300px; /* Adjust this value as needed */
+  margin: 0 auto;
+}
