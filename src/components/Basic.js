@@ -256,7 +256,7 @@ const week0Data = {
     if (inputMessage !== '') {
       try {
         setAiAssistantChat((prevChat) => [...prevChat, { sender: 'user', msg: inputMessage }]);
-        const response = await fetch('https://community-chatbot-gpt35turbo.vikrantth2013.repl.co', {
+        const response = await fetch('https://community-chatbot-gpt-35-turbo-vikrantth2013.replit.app', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
